@@ -108,6 +108,10 @@ aside ul li {
 	display: inline;
 }
 
+aside ul li a {
+	text-decoration: none;
+}
+
 .icon {
 	width: 60px;
 }
