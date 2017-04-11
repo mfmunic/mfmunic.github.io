@@ -1,0 +1,26 @@
+form label {
+	width: 100%;
+	color: #777777;
+	font-family: arial;
+}
+
+form div {
+	margin-top: 20px;
+}
+
+.form-control {
+	width: 100%
+}
+
+#message {
+	height: 200px;
+}
+
+#submit {
+	background-color: #4aaaa5;
+	margin: 10px 0 0 0;
+	padding: 10px 25px 10px 25px;
+	color: #ffffff;
+	font-family: arial;
+	border: 0px
+}
