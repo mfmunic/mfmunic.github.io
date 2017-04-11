@@ -58,13 +58,14 @@ body {
 	text-decoration: none;
 	color: #777777;
 	font-family: arial;
+	transition: .5s;
 }
 
 #linkBlock li a:hover{
 	text-decoration: none;
-	color: #777777;
+	color: white;
 	font-family: arial;
-	text-shadow: 0 0 3px #4aaaa5;
+	text-shadow: 0 0 2px #4aaaa5;
 }
 
 #container {
