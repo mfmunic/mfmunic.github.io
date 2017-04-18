@@ -1,67 +1,76 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-	<title>Marc F. Munic!</title>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
-	<link rel="stylesheet" type="text/css" href="Assets/CSS/Style.css">
+ 	<title>Marc F. Munic</title>
+ 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:800i|Racing+Sans+One|Spinnaker" rel="stylesheet">
+	<link rel="icon" type="image/png" href="assets/images/Beardfavicon.png">
+	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/leftnavbar.css">
 </head>
-
 <body>
-
-	<header id="fullHeader">
-		<div id="headerContainer">
-			<h1 id="nameBlock">Marc F. Munic</h1>
-				<ul id="linkBlock">
-					<li id="activePage">About</li>
-					<li> | </li>
-					<li>
-						<a href="HTML/Portfolio.html">Portfolio</a>
-					</li>
-					<li> | </li>
-					<li>
-						<a href="HTML/Contact.html">Contact</a>
-					</li>
-				</ul>
-		</div>
-	</header>
-	
-	<div id="container">
-		<section>
-			<h1>About Me</h1>
-			<hr>
-			<img src="Assets/Images/marcPic.jpg" alt="Good Looking Gentleman">
-			<article>
-				<p>Marc F. Munic is a Navy Veteran and is very active is multiple community groups. He is an elected Board Member and Treasurer for the City Heights Town Council, Inc., and Vice Chair for the City Heights Area Planning Committee. His active involvement in and commitment to the improvement of his neighborhood and community, since moving to San Diego in 2004, has led to him to running a number of local political campaigns. This unique experience in creating public relations strategies, media campaigns, creating an extensive government relations network, budget analysis, fundraising, and utilizing market research has made Marc versatile and flexible enough to handle any opportunity.</p>
-			</article>
-		</section>
-
-		<aside>
-			<h2>Connect with Me</h2>
-			<hr>
-			<ul>
-				<li>
-					<a href="https://www.linkedin.com/in/marcmunic/" target="_blank">
-					<img class="icon" src="Assets/Images/linkedInIcon.png" alt="Linkedin">
-					</a>
-				</li>
-				<li>
-					<a href="https://github.com/mfmunic" target="_blank">
-					<img class="icon" src="Assets/Images/gitHubIcon.png" alt="GitHub">
-					</a>
-				</li>
-				<li>
-					<a href="http://stackoverflow.com/users/7699594/marc-munic" target="_blank">
-					<img class="icon" src="Assets/Images/stackOverFlowIcon.png" alt="Stack Overflow">
-					</a>
-				</li>
-			</ul>
-		</aside>
+	<div id="titleBar">
+		<h1>ABOUT</h1>
 	</div>
 
-	<footer>
-		<p>&copy; Copyright 2016 Marc F. Munic</p>
-	</footer>
+	<div id="nameRing"></div>
+	<div id="nameBorder">
+		<h1 class="name" id="firstName">Marc</h1>
+		<h1 class="name">Munic</h1>
+	</div>
+
+	<div id="leftNavBar">
+		<table>
+			<tr>
+				<td class="navText">ABOUT</td>
+				<td>
+					<div class="buttonBorder">
+					<a class="pageButton" id="aboutButton" href="#"></a>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="navText">PORTFOLIO</td>
+				<td>
+					<div class="buttonBorder">
+					<a class="pageButton" id="portfolioButton" href="#"></a>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="navText">RESUME</td>
+				<td>
+					<div class="buttonBorder">
+					<a class="pageButton" id="resumeButton" href="#"></a>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<div id="rightNavBar">
+		<img id="pic" src="assets/images/MarcPic.jpg">
+		<h2>Contact</h2>
+			<div>
+				<p class="contactInfo">(619) 356-8642</p>
+				<p class="contactInfo">mfmunic@gmail.com</p>
+			</div>
+			<h2>Links</h2>
+			<div>
+				<nav>
+					<ul>
+						<li><a href="https://github.com/mfmunic"><img id="githubIcon" src="assets/images/githubicon.png"> mfmunic</a></li>
+						<li><a href="http://stackoverflow.com/users/7699594/marc-munic"><img id="stackOverflowIcon" src="assets/images/stackoverflowicon.png"> Marc Munic</a></li>
+						<li><a href="#"><img id="linkedInIcon" src="assets/images/linkedinicon.png"> Marc Munic</a></li>
+					</ul>
+				</nav>
+			</div>
+	</div>
+		
+	<div id="aboutText">
+		<p>Marc F. Munic is a Navy Veteran and is very active is multiple community groups. He is an elected Board Member and Treasurer for the City Heights Town Council, Inc., and Vice Chair for the City Heights Area Planning Committee. His active involvement in and commitment to the improvement of his neighborhood and community, since moving to San Diego in 2004, has led to him to running a number of local political campaigns. This unique experience in creating public relations strategies, media campaigns, creating an extensive government relations network, budget analysis, fundraising, and utilizing market research has made Marc versatile and flexible enough to handle any opportunity.</p>
+	</div>
+
+
 
 </body>
 </html>
