@@ -15,15 +15,15 @@
 .name {
 	margin: auto;
 	margin-bottom: auto;
-	font-size: 45px;
+	font-size: 37px;
 	padding: 3px;
 	text-align: left;
 	color:#e8e8e8;
-	font-family: "Copperplate Gothic Light";
+	font-family: 'Ultra', serif;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 500;
-	line-height: 59px;
+	line-height: 60px;
 
 }
 
