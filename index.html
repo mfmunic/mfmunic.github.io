@@ -1,89 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-
- 	<title>Marc F. Munic</title>
+	<meta charset="UTF-8">
+	<title>Marc F. Munic</title>
 	<link rel="icon" type="image/png" href="assets/images/Beardfavicon.png">
-
-	<link href="https://fonts.googleapis.com/css?family=Lato:400,900|Ultra" rel="stylesheet">
-	<!-- Google Font for Left Navbar Icon and Main Text -->
-
-	<link rel="stylesheet" href="[project_path]/css/normalize.css">
-	<!-- Reset -->
-    <link rel="stylesheet" href="[project_path]/css/typeplate.css">
-    <!-- typeplate styles -->
-    <link rel="stylesheet" href="[project_path]/css/main.css">
-    <!-- main stylesheet -->
-
 	
-	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/leftnavbar.css">
+	<!-- reset file -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Bootswatch Styling for Improving the Aesthetics -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css">
+
+	<!-- Font Awesome CSS Icons (For cool glyphicons) -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100|Lato" rel="stylesheet">
+
+	<!-- my own css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
 </head>
 <body>
-	<div id="titleBar">
-		<h1>ABOUT</h1>
-	</div>
 
-	<div id="nameRing"></div>
-	<div id="nameBorder">
-		<h1 class="name" id="firstName">Marc</h1>
-		<h1 class="name">Munic</h1>
-	</div>
-
-	<div id="leftNavBar">
-		<table>
-			<tr>
-				<td class="navText">ABOUT</td>
-				<td>
-					<div class="buttonBorder">
-					<a class="pageButton" id="aboutButton" href="#"></a>
-					</div>
-				</td>
-			</tr>
-			<tr>
-				<td class="navText">PORTFOLIO</td>
-				<td>
-					<div class="buttonBorder">
-					<a class="pageButton" id="portfolioButton" href="#"></a>
-					</div>
-				</td>
-			</tr>
-			<tr>
-				<td class="navText">RESUME</td>
-				<td>
-					<div class="buttonBorder">
-					<a class="pageButton" id="resumeButton" href="#"></a>
-					</div>
-				</td>
-			</tr>
-		</table>
-	</div>
-
-	<div id="rightNavBar">
-		<img id="pic" src="assets/images/MarcPic.jpg">
-		<h2>Contact</h2>
-			<div>
-				<p class="contactInfo">(619) 356-8642</p>
-				<p class="contactInfo">mfmunic@gmail.com</p>
+	<header class="startHeader">
+		<div class="nameBorder">
+			<h1 class="nameTitle">Marc F. Munic</h1>
+		</div>
+		<div class="aboutDiv headerDiv hide">About
+		</div>
+		<div class="resumeDiv headerDiv hide">Resume
+		</div>
+		<div class="portfolioDiv headerDiv hide">Portfolio
+		</div>
+		<div class="contactDiv headerDiv hide">Contact
+		</div>
+	</header>
+	
+	<div id="container">
+		<div class="mainBorder">
+			<div class="mainContainer">
+				<img class="selfie" src="assets/images/marc.png">
+				<h2>About</h2>
+				<br>
+				<p> Marc Munic is from San Jose, CA.  He enlisted in the Navy in the spring of 2002 and entered the Naval Nuclear Power Training program.  It is considered the second most challenging program the military has to offer (the first being the SEALs).  He was stationed on the USS Reagan, an aircraft carrier out of Coronado.  After the Navy he stayed in San Diego.</p>
+		 
+				<p>Marc worked at Bridgepoint Education, and took advantage of the company benefit of free education.  He finished his BA in psychology while working full time.  In 2010, he left Bridgepoint and pursued a career in politics.</p>
+		 
+				<p>Marc was the campaign manager and consultant for a number of San Diego local campaigns for the 2012 and 2014 election cycles.   During this time he was elected to the boards for the City Heights Area Planning Committee and City Heights Town Council.</p>
+		 
+				<p>Marc then went on to be a founding member for a company called Exusmed.  Exusmed was a telehealth company designed to connect patients with their doctors through online portals.</p>
+		 
+				<p>Marc currently works for the Mt. Soledad National Veterans Memorial, a 501(c3) that memorializes veterans living and deceased.  In his offtime, he works with his business partner to buy, renovate, and sell single family homes; he still consults on various local political campaigns; and he is attending the UCSD Full Stack Developer bootcamp.  Lastly, he still spends time with his wife, and takes his dog to the beach.</p>
 			</div>
-			<h2>Links</h2>
-			<div>
-				<nav>
-					<ul>
-						<li><a href="https://github.com/mfmunic" target="_blank"><img id="githubIcon" src="assets/images/githubicon.png"> mfmunic</a></li>
-						<li><a href="http://stackoverflow.com/users/7699594/marc-munic" target="_blank"><img id="stackOverflowIcon" src="assets/images/stackoverflowicon.png"> Marc Munic</a></li>
-						<li><a href="https://www.linkedin.com/in/marcmunic/" target="_blank"><img id="linkedInIcon" src="assets/images/linkedinicon.png"> Marc Munic</a></li>
-					</ul>
-				</nav>
-			</div>
-	</div>
-		
-	<div id="aboutText">
-		<p>Marc F. Munic is a Navy Veteran and is very active is multiple community groups. He is an elected Board Member and Treasurer for the City Heights Town Council, Inc., and Vice Chair for the City Heights Area Planning Committee. His active involvement in and commitment to the improvement of his neighborhood and community, since moving to San Diego in 2004, has led to him to running a number of local political campaigns. This unique experience in creating public relations strategies, media campaigns, creating an extensive government relations network, budget analysis, fundraising, and utilizing market research has made Marc versatile and flexible enough to handle any opportunity.</p>
+		</div>
 	</div>
 
+	<footer class="stickyFoot">
+		<p>Marc F. Munic &copy;2017</p>
+	</footer>
+<!-- jQuery JS -->
+<script src="https://code.jquery.com/jquery.js"></script>
 
+<!-- Code to the Javascript File -->
+<script type="text/javascript" src="assets/javascript/script.js">
+</script>
 
 </body>
 </html>
