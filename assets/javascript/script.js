@@ -1,22 +1,17 @@
 
-$(".nameTitle").one("click", function(){
+$(".nameBorder").one("click", function(){
+
 	$(".nameTitle").css("transition", "1s");
 	$(".nameTitle").css("font-size", "50px");
-	$(".nameTitle").css("-webkit-transform", "rotateY(-180deg)");
-	$(".nameTitle").css("transform", "rotateY(-180deg)");
-	$(".nameTitle").css("-moz-transform", "rotateY(-180deg)");
-	$(".nameTitle").css("-o-transform", "rotateY(-180deg)");
-	$(".nameTitle").css("-ms-transform", "rotateY(-180deg)");
 
 	$(".nameBorder").css("transition", "1s");
 	$(".nameBorder").css("left", "10px");
-	$(".nameBorder").css("-webkit-transform", "rotateY(3600deg)");
-	$(".nameBorder").css("transform", "rotateY(180deg)");
-	$(".nameBorder").css("-moz-transform", "rotateY(180deg)");
-	$(".nameBorder").css("-o-transform", "rotateY(180deg)");
-	$(".nameBorder").css("-ms-transform", "rotateY(180deg)");
+	$(".nameBorder").css("-webkit-transform", "rotateY(360deg)");
+	$(".nameBorder").css("transform", "rotateY(360deg)");
+	$(".nameBorder").css("-moz-transform", "rotateY(360deg)");
+	$(".nameBorder").css("-o-transform", "rotateY(360deg)");
+	$(".nameBorder").css("-ms-transform", "rotateY(360deg)");
 	$(".nameBorder").css("box-shadow", "inset -2px 2px 2px");
-
 
 	$(".startHeader").css("height", "100px");
 	$(".nameTitle").css("margin", "3px");
@@ -25,6 +20,7 @@ $(".nameTitle").one("click", function(){
 
 	$(".headerDiv").removeClass("hide");
 	setTimeout(function(){
+
 		$(".nameTitle").css("transition", "0s");
 		$(".headerDiv").css("visibility", "visible");
 		$(".aboutDiv").css("width", "25%");
@@ -52,4 +48,3 @@ $(".nameTitle").one("click", function(){
 		$("#container").css("overflow-y", "auto");
 	}, 1750)
 });//end of one click main header
-
