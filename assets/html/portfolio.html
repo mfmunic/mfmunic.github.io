@@ -6,13 +6,22 @@
 	<link rel="icon" type="image/png" href="../images/Beardfavicon.png">
 	
 	<!-- reset file -->
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+
+	<!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    
+    <!-- Compiled and minified CSS for MATERIALIZE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript for Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
 
 	<!-- Bootswatch Styling for Improving the Aesthetics -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css"> -->
 
 	<!-- Font Awesome CSS Icons (For cool glyphicons) -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -20,8 +29,7 @@
 	<!-- google fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100|Lato" rel="stylesheet">
 
-	<!-- my own css -->
-	<link rel="stylesheet" type="text/css" href="../css/portfolio.css">
+	
 	
 </head>
 <body>
@@ -45,16 +53,79 @@
 			<div class="mainContainer">
 				<h2>Portfolio</h2>
 				<br>
-				<p> Marc Munic is from San Jose, CA.  He enlisted in the Navy in the spring of 2002 and entered the Naval Nuclear Power Training program.  It is considered the second most challenging program the military has to offer (the first being the SEALs).  He was stationed on the USS Reagan, an aircraft carrier out of Coronado.  After the Navy he stayed in San Diego.</p>
+				<div class="gallery" >
+				<!-- Modal Trigger -->
+  <!-- <a class="modal-trigger waves-effect waves-light btn" href="#modal1">Modal</a> -->
+					<a type="button" class="frame modal-trigger waves-effect waves-light btn" data-toggle="modal" href="#modal1">
+						<img class="preview" id="gameofhangman" src="https://i.ytimg.com/vi/iN8PKcNGcuI/maxresdefault.jpg">
+						<p>Game of Hangman</p>
+					</a>
+					<a type="button" class="frame modal-trigger waves-effect waves-light btn" data-toggle="modal" href="#modal2">
+						<img class="preview" id="triviagame" src="https://thereadersguidetoepublishing.files.wordpress.com/2012/08/welcome-to-redemption-town-pic.jpg">
+						<p>Trivia Game</p>
+					</a>
+					<a type="button" class="frame modal-trigger waves-effect waves-light btn" data-toggle="modal" href="#modal3">
+						<img class="preview" id="dogepile" src="../images/dogepilePreview.png">
+						<p>dogepile!</p>
+					</a>
+					<a type="button" class="frame modal-trigger waves-effect waves-light btn" data-toggle="modal" href="#modal4">
+						<img class="preview" id="rpsls" src="../images/rpsls.jpg">
+						<p>Rock Paper Scissors Lizard Spock</p>
+					</a>
+				</div>
+			</div>
 		</div>
 	</div>
+
+
+  <!-- Modal Structures -->
+  	<div id="modal1" class="modal modal-fixed-footer">
+    	<div class="modal-content">
+      		<h4>Game of Hangman</h4>
+      		<p>A bunch of text</p>
+    	</div>
+    	<div class="modal-footer">
+      		<a href="https://mfmunic.github.io/Hangman-Game/" target="_blank" class="modal-action modal-close waves-effect waves-green btn-flat">Go There <i class="fa fa-rocket" aria-hidden="true"></i></a>
+    	</div>
+  	</div>
+
+	<div id="modal2" class="modal modal-fixed-footer">
+    	<div class="modal-content">
+      		<h4>Trivia Game</h4>
+      		<p>A bunch of text</p>
+    	</div>
+    	<div class="modal-footer">
+      		<a href="https://mfmunic.github.io/triviagame/" target="_blank" class="modal-action modal-close waves-effect waves-green btn-flat">Go There <i class="fa fa-play" aria-hidden="true"></i></a>
+    	</div>
+  	</div>
+
+	<div id="modal3" class="modal modal-fixed-footer">
+    	<div class="modal-content">
+      		<h4>dogepile!</h4>
+      		<p>A bunch of text</p>
+    	</div>
+    	<div class="modal-footer">
+      		<a href="https://mfmunic.github.io/Project1/" target="_blank" class="modal-action modal-close waves-effect waves-green btn-flat">Go There <i class="fa fa-users" aria-hidden="true"></i></a>
+    	</div>
+  	</div>
+
+  	<div id="modal4" class="modal modal-fixed-footer">
+    	<div class="modal-content">
+      		<h4>Rock Paper Scissors Lizard Spock</h4>
+      		<p>A bunch of text</p>
+    	</div>
+    	<div class="modal-footer">
+      		<a href="https://mfmunic.github.io/rock-paper-scissors/" target="_blank" class="modal-action modal-close waves-effect waves-green btn-flat">Go There <i class="fa fa-hand-o-right" aria-hidden="true"></i></a>
+    	</div>
+  	</div>
 
 	<footer class="stickyFoot">
 		<p>Marc F. Munic &copy;2017</p>
 	</footer>
 <!-- jQuery JS -->
-<script src="https://code.jquery.com/jquery.js"></script>
-
+<!-- <script src="https://code.jquery.com/jquery.js"></script> -->
+<!-- my own css -->
+	<link rel="stylesheet" type="text/css" href="../css/portfolio.css">
 <!-- Code to the Javascript File -->
 <script type="text/javascript" src="../javascript/portfolio.js">
 </script>
