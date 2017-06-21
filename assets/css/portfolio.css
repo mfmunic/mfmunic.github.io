@@ -76,6 +76,7 @@ body  {
 	color: white;
 	font-family: 'Lato', sans-serif;
 	padding-left: 10px;
+	padding-top: 6px;
 	background: #00274c;
 	background: -o-linear-gradient(right, #00274c, white);
 	background: -webkit-linear-gradient(left, #00274c, white);
