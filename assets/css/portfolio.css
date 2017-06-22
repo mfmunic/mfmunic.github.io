@@ -261,16 +261,35 @@ a:hover {
 	border-radius: 5px;
 }
 
-.modal-content{
+.modal.modal-fixed-footer .modal-content{
 	color: #00274c;
 	border-radius: 0;
 	border-top: 0;
+	font-size: 20px;
+	overflow: auto;
+	height: calc(100% - 116px);
+	/*margin-bottom: 56px;*/
+	position: absolute;
+	bottom: 56px;
 }
 
-.modal-content #dogepile{
-	width: 300px;
-	float: left;
-}
 .modal{
 	border-radius: 5px;
+}
+
+.close-modal{
+	position: absolute;
+	left: 5px;
+}
+
+.modal-close{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.screengrab {
+	border: 2px solid #00274c;
+	border-radius: 5px;
+	width: 400px;
+	float: left;
 }
