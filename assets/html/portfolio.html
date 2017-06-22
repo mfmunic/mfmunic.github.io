@@ -18,17 +18,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 
 	<!-- Bootstrap CSS -->
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 	<!-- Bootswatch Styling for Improving the Aesthetics -->
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css">
 
 	<!-- Font Awesome CSS Icons (For cool glyphicons) -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 	<!-- google fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100|Lato" rel="stylesheet">
-
+	
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/typeplate-starter-kit/3.0.1/css/typeplate.min.css" rel="stylesheet">
 	
 	
 </head>
@@ -54,14 +55,12 @@
 				<h2>Portfolio</h2>
 				<br>
 				<div class="gallery" >
-				<!-- Modal Trigger -->
-  <!-- <a class="modal-trigger waves-effect waves-light btn" href="#modal1">Modal</a> -->
 					<a type="button" class="frame modal-trigger waves-effect waves-light btn" data-toggle="modal" href="#modal1">
-						<img class="preview" id="gameofhangman" src="https://i.ytimg.com/vi/iN8PKcNGcuI/maxresdefault.jpg">
+						<img class="preview" id="gameofhangman" src="../images/maxresdefault.jpg">
 						<p>Game of Hangman</p>
 					</a>
 					<a type="button" class="frame modal-trigger waves-effect waves-light btn" data-toggle="modal" href="#modal2">
-						<img class="preview" id="triviagame" src="https://thereadersguidetoepublishing.files.wordpress.com/2012/08/welcome-to-redemption-town-pic.jpg">
+						<img class="preview" id="triviagame" src="../images/redemption.jpg">
 						<p>Trivia Game</p>
 					</a>
 					<a type="button" class="frame modal-trigger waves-effect waves-light btn" data-toggle="modal" href="#modal3">
@@ -80,8 +79,9 @@
 
   <!-- Modal Structures -->
   	<div id="modal1" class="modal modal-fixed-footer">
+  		<h4 class="modal-header">Game of Hangman</h4>
     	<div class="modal-content">
-      		<h4>Game of Hangman</h4>
+      		
       		<p>A bunch of text</p>
     	</div>
     	<div class="modal-footer">
@@ -90,8 +90,8 @@
   	</div>
 
 	<div id="modal2" class="modal modal-fixed-footer">
+		<h4 class="modal-header">Trivia Game</h4>
     	<div class="modal-content">
-      		<h4>Trivia Game</h4>
       		<p>A bunch of text</p>
     	</div>
     	<div class="modal-footer">
@@ -100,9 +100,11 @@
   	</div>
 
 	<div id="modal3" class="modal modal-fixed-footer">
+		<h4 class="modal-header">dogepile!</h4>
     	<div class="modal-content">
-      		<h4>dogepile!</h4>
-      		<p>A bunch of text</p>
+ 			<p><img class="screengrab" id="dogepile" src="../images/dogepileScreengrab.png">Concept: dogepile! is a search aggregrator that pulls location data of dog friendly parks, hotels, and resteraunts; and includes pet meetups.</p>
+      		<p> What did I learn:  This was the first project that I worked in a group.  It was mainly designed to work on API's.  My group used Google Maps API, Yelp API, and Meetup API.</p>
+      		<p>Challenges:  This was the first time we all had worked in a group setting, so learning how to optimize Github was a majjor obstacle.</p>
     	</div>
     	<div class="modal-footer">
       		<a href="https://mfmunic.github.io/Project1/" target="_blank" class="modal-action modal-close waves-effect waves-green btn-flat">Go There <i class="fa fa-users" aria-hidden="true"></i></a>
@@ -110,8 +112,8 @@
   	</div>
 
   	<div id="modal4" class="modal modal-fixed-footer">
+  		<h4 class="modal-header">Rock Paper Scissors Lizard Spock</h4>
     	<div class="modal-content">
-      		<h4>Rock Paper Scissors Lizard Spock</h4>
       		<p>A bunch of text</p>
     	</div>
     	<div class="modal-footer">
