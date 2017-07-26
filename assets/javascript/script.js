@@ -39,12 +39,12 @@ $(".nameBorder").one("click", function(){
 
 	setTimeout(function(){
 		$(".aboutDiv").css("width", "55%");
-		$(".resumeDiv").css("width", "55%");
+		// $(".resumeDiv").css("width", "55%");
 	}, 1500)
 
-	setTimeout(function(){
-		$(".aboutDiv").css("width", "70%");
-		$(".aboutDiv").addClass("current");
-		$("#container").css("overflow-y", "auto");
-	}, 1750)
+	// setTimeout(function(){
+	// 	$(".aboutDiv").css("width", "70%");
+	// 	$(".aboutDiv").addClass("current");
+	// 	$("#container").css("overflow-y", "auto");
+	// }, 1750)
 });//end of one click main header

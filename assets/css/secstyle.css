@@ -89,7 +89,7 @@ body  {
 
 .aboutDiv {
 	z-index: 1;
-	width: 70%;
+	width: 55%;
 }
 
 .aboutDiv:hover {
@@ -97,7 +97,7 @@ body  {
 	text-shadow: 0 0 5px #FFFFCC;
 }
 
-.resumeDiv {
+/*.resumeDiv {
 	z-index: 2;
 	width: 55%;
 }
@@ -105,7 +105,7 @@ body  {
 .resumeDiv:hover {
 	cursor: pointer;
 	text-shadow: 0 0 5px #FFFFCC;
-}
+}*/
 
 .portfolioDiv {
 	z-index: 3;
@@ -120,6 +120,11 @@ body  {
 .contactDiv {
 	z-index: 4;
 	width: 25%;
+}
+
+.contactDiv:hover {
+	cursor: pointer;
+	text-shadow: 0 0 5px #FFFFCC;
 }
 
 .current {
