@@ -1,0 +1,53 @@
+#display {
+  /* padding: 100px 0 0 100px; */
+  margin: 20px 0 0 90px;
+  height: calc(100vh - 83px);
+  overflow: auto;
+  width: 100%;
+  /* height: 100vh; */
+}
+
+.links ul {
+  list-style: none;
+}
+
+.links ul li {
+  margin: 10px auto;
+}
+
+.links ul li a {
+  display: flex;
+  align-items: center;
+}
+
+.links ul li a img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+#aboutDisplay {
+  height: 100%;
+  width: 75%;
+}
+
+#resumeDisplay {
+  height: 100%;
+  width: 75%;
+}
+
+#resumeIframe {
+  width: 100%;
+  height: 98%;
+}
+
+#portfolioDisplay {
+  width: 64%;
+}
+
+.preview {
+  width: 100%;
+}
+
+#gameofhangman {
+  height: 75%;
+}

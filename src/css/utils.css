@@ -1,0 +1,121 @@
+.blue-BG {
+  background-color: #506296;
+}
+
+.green-BG {
+  background-color: #2ea113;
+}
+
+.orange-BG {
+  background-color: #ff7733;
+}
+
+.yellow-BG {
+  background-color: #edb458;
+}
+
+.red-BG {
+  background-color: #990000;
+}
+
+.orange-Text {
+  color: #ff7733;
+}
+
+.yellow-Text {
+  color: #edb458;
+}
+
+.red-Text {
+  color: #990000;
+}
+
+.green-Text {
+  color: #2ea113;
+}
+
+.blue-Text {
+  color: #506296;
+}
+
+.orange-border {
+  border-color: #ff7733;
+}
+
+.yellow-border {
+  border-color: #edb458;
+}
+
+.red-border {
+  border-color: #990000;
+}
+
+.green-border {
+  border-color: #2ea113;
+}
+
+.blue-border {
+  border-color: #506296;
+}
+
+.orange-HeaderBorder {
+  border-image: linear-gradient(to right, #506296 0%, #ff7733 100%);
+}
+
+.yellow-HeaderBorder {
+  border-image: linear-gradient(to right, #506296 0%, #edb458 100%);
+}
+
+.red-HeaderBorder {
+  border-image: linear-gradient(to right, #506296 0%, #990000 100%);
+}
+
+.green-HeaderBorder {
+  border-image: linear-gradient(to right, #506296 0%, #2ea113 100%);
+}
+
+.blue-HeaderBorder {
+  border-image: linear-gradient(to right, #506296 0%, #506296 100%);
+}
+
+#nameLogo:hover {
+  cursor: context-menu;
+}
+
+.menuRibbon:hover {
+  cursor: pointer;
+}
+
+#header:hover {
+  cursor: context-menu;
+}
+
+.toolbarButton-active {
+  margin-bottom: 5px;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  font-size: 23px;
+}
+
+.toolbarButton-active:hover {
+  cursor: context-menu;
+}
+
+.toolbarButton-inactive {
+  margin-bottom: 5px;
+  text-align: center;
+  background-color: white;
+  padding: 10px;
+  font-size: 23px;
+}
+
+.toolbarButton-inactive:hover {
+  cursor: pointer;
+}
+
+.buttonLinks button {
+  font-size: 35px;
+  background-color: #2ea113;
+  color: white;
+}

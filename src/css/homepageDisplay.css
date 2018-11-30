@@ -1,0 +1,55 @@
+#homeDisplay {
+  height: 100%;
+  width: 50%;
+}
+
+.images {
+  display: flex;
+  width: 100%;
+}
+
+.homeImg {
+  position: absolute;
+}
+
+#linkedInImg {
+  clip-path: polygon(0px 0px, 0px 400px, 300px 400px, 300px 0px);
+}
+
+#mahImg {
+  margin-left: -100px;
+  margin-top: -50px;
+  clip-path: polygon(400px 50px, 400px 450px, 700px 450px, 700px 50px);
+}
+
+#matImg {
+  margin-left: 350px;
+  margin-top: -190px;
+  clip-path: polygon(250px 190px, 250px 590px, 550px 590px, 550px 190px);
+}
+
+#masImg {
+  margin-left: 200px;
+  margin-top: -300px;
+  clip-path: polygon(700px 300px, 700px 700px, 1000px 700px, 1000px 300px);
+}
+
+#intro {
+  color: black;
+  position: absolute;
+  top: 495px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  border-top: 3px solid #506296;
+  border-bottom: 3px solid #506296;
+  z-index: -1;
+}
+
+#intro h1 {
+  margin: 0;
+}
+
+#myName {
+  font-family: "Noto Serif", serif;
+}
