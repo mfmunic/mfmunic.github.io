@@ -1,0 +1,91 @@
+#header {
+  height: 58px;
+  width: calc(100% - 150px);
+  padding-top: 5px;
+  padding-left: 90px;
+  margin: 0;
+}
+
+#headerText {
+  margin: 5px 0;
+  font-size: 49px;
+}
+
+#lowerLine {
+  height: 5px;
+  width: calc(100% - 150px);
+  border-style: solid;
+  border-width: 3px 0;
+  border-image-slice: 1;
+  background-color: white;
+  z-index: 9;
+  position: absolute;
+}
+
+#logoBorderHeader {
+  border-radius: 50%;
+  background-color: #506296;
+  width: 214px;
+  height: 214px;
+  display: flex;
+  align-items: center;
+  z-index: 0;
+  top: 11px;
+  left: 11px;
+  position: absolute;
+}
+
+#toolbar {
+  width: 150px;
+  border-width: 3px;
+  border-style: solid;
+  border-top: white;
+  position: absolute;
+  right: 20px;
+  top: 72px;
+  background-color: white;
+  z-index: 10;
+  border-radius: 0 0 10px 10px;
+  padding: 0 4px;
+  transition: 500ms;
+}
+
+.imageHolder {
+  display: block;
+  height: 225px;
+}
+
+#masToolbar {
+  position: absolute;
+  width: 300px;
+  left: -126px;
+  top: -3px;
+  /* clip-path: polygon(130px 0px, 280px 0px, 280px 225px, 130px 225px); */
+  clip-path: inset(0 19px 0 129px round 5px);
+}
+
+/* #portfolioTools {
+  margin-top: 226px;
+} */
+
+#matToolbar {
+  position: absolute;
+  width: 300px;
+  left: -51px;
+  top: -62px;
+  clip-path: inset(59px 94px 0 54px round 5px);
+}
+
+#sexyBeast {
+  width: 100%;
+  border-radius: 5px 5px;
+  margin-top: -3px;
+}
+
+#mahToolbar {
+  position: absolute;
+  width: 300px;
+  left: -51px;
+  top: -3px;
+  clip-path: inset(0px 94px 0 54px round 5px);
+}

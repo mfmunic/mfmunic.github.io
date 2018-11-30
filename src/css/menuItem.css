@@ -1,0 +1,80 @@
+.fullMenuItem {
+  margin-top: 20px;
+}
+
+.menuItem {
+  width: 170px;
+  color: white;
+  margin-left: 20px;
+  display: flex;
+  height: 50px;
+  transform: skew(0deg, -10deg);
+}
+
+.menuRibbon {
+  font-size: 22px;
+  width: 100px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.greenBG {
+  background-color: #2ea113;
+}
+
+#menuTail-green {
+  width: 0;
+  height: 0;
+  border-bottom: 50px solid #2ea113;
+  border-left: 35px solid transparent;
+}
+
+.orangeBG {
+  background-color: #ff7733;
+}
+
+#menuTail-orange {
+  width: 0;
+  height: 0;
+  border-bottom: 50px solid #ff7733;
+  border-left: 35px solid transparent;
+}
+
+.yellowBG {
+  background-color: #edb458;
+}
+
+#menuTail-yellow {
+  width: 0;
+  height: 0;
+  border-bottom: 50px solid #edb458;
+  border-left: 35px solid transparent;
+}
+
+.redBG {
+  background-color: #990000;
+}
+
+#menuTail-red {
+  width: 0;
+  height: 0;
+  border-bottom: 50px solid #990000;
+  border-left: 35px solid transparent;
+}
+
+#menuShadow {
+  width: 0;
+  height: 0px;
+  margin-left: 150px;
+  border-top: 4px solid transparent;
+  border-left: 5px solid black;
+  border-bottom: 9px solid transparent;
+}
+
+/* #menuShadow-red:active {
+  width: 0;
+  height: 0;
+  border-top: 50px solid #990000;
+  border-right: 35px solid transparent;
+} */
