@@ -1,8 +1,8 @@
 {
-  "name": "homepage",
+  "name": "mfmunic.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mfmunic.github.io/homepage",
+  "homepage": "https://mfmunic.github.io",
   "dependencies": {
     "firebase": "^5.5.9",
     "gh-pages": "^2.0.1",
