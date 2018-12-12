@@ -16,6 +16,7 @@ class Triviagame extends Component {
         <a
           href="https://mfmunic.github.io/triviagame/"
           target="_blank"
+          rel="noopener noreferrer"
           className="buttonLinks"
         >
           <button>Trivia Game</button>

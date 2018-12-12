@@ -110,7 +110,7 @@ class ContactDisplay extends Component {
         <div className="email">
           <h3>E-mail</h3>
           <button onClick={this.clickEmail.bind(this)}>
-            mfmunic@gmail.com
+          mfmunic@gmail.com
           </button>
         </div>
       </div>
