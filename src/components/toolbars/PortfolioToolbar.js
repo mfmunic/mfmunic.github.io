@@ -8,11 +8,6 @@ class PortfolioToolbar extends Component {
     const color = "green";
     return (
       <div>
-        {/* <img
-          src={require("../utils/images/Marc.png")}
-          alt="Sexy Beast"
-          id="sexyBeast"
-        /> */}
         <div className="imageHolder">
           <img
             src={require("../utils/images/marcandstatue.jpg")}

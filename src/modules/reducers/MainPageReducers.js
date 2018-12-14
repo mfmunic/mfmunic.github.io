@@ -13,8 +13,19 @@ export default function(state = initialState, action = {}) {
       const { menuItem, color } = action.payload;
       let start = "default";
       //TODO: Change to switch with more toolbars
-      if (menuItem === "Portfolio") {
-        start = "Homepage";
+      // if (menuItem === "Portfolio") {
+      //   start = "Homepage";
+      // }
+
+      switch (menuItem) {
+        case "Portfolio":
+          start = "Homepage";
+          break;
+        case "Resume":
+          start = "Work Experience";
+          break;
+        default:
+          break;
       }
       return {
         ...state,
