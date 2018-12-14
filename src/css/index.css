@@ -5,6 +5,7 @@
 @import "./menuItem.css";
 @import "./utils.css";
 @import "./homepageDisplay.css";
+@import "./workExp.css";
 
 body {
   margin: 0;

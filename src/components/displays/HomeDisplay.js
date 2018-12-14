@@ -1,14 +1,13 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
-// import homeText from "./texts/HomeText";
+// import WorkExpDisplay from "./resumeItems/WorkExpRI";
 
 class HomeDisplay extends Component {
   render() {
     return (
+      // <WorkExpDisplay />
       <div id="homeDisplay">
-        {/* <h1 className="blue-Text">Hello, World!</h1>
-        <p>{homeText}</p> */}
         <div id="homeImages">
           <img
             src={require("../utils/images/Marc.png")}

@@ -1,11 +1,18 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import _ from "lodash";
 
 import AboutText from "./texts/AboutText";
 
 class AboutDisplay extends Component {
   render() {
-    return <div id="aboutDisplay">{AboutText}</div>;
+    const aboutWithBreaks = [];
+    _.forEach(AboutText, about => {
+      aboutWithBreaks.push(about);
+      aboutWithBreaks.push(<br />);
+      aboutWithBreaks.push(<br />);
+    });
+    return <div id="aboutDisplay">{aboutWithBreaks}</div>;
   }
 }
 

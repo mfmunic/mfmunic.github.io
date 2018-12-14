@@ -17,11 +17,11 @@ export function toolbar(toolbarItem) {
 }
 
 export function mail() {
-  const email = `<form method="POST" action="https://formspree.io/mfmunic@yahoo.com">
-    <input type="email" name="email" placeholder="mfmunic@gmail.com">
-    <textarea name="message" placeholder="Test Message"></textarea>
-    <button type="submit">Send Test</button>
-  </form>`;
+  // const email = `<form method="POST" action="https://formspree.io/mfmunic@yahoo.com">
+  //   <input type="email" name="email" placeholder="mfmunic@gmail.com">
+  //   <textarea name="message" placeholder="Test Message"></textarea>
+  //   <button type="submit">Send Test</button>
+  // </form>`;
 
   return {
     type: actionTypes.EMAIL,
