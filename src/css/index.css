@@ -6,6 +6,7 @@
 @import "./utils.css";
 @import "./homepageDisplay.css";
 @import "./workExp.css";
+@import "./skills.css";
 
 body {
   margin: 0;
