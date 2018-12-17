@@ -3,12 +3,13 @@ import { connect } from "react-redux";
 
 import WorkExpDisplay from "./resumeItems/WorkExpRI";
 import ResumePDF from "./resumeItems/ResumePDF";
+import SkillsDisplay from "./resumeItems/SkillsRI";
 
 class ResumeDisplay extends Component {
   decidedDisplay(chosen) {
     switch (chosen) {
-      // case "Skills":
-      //   return < />;
+      case "Skills":
+        return <SkillsDisplay />;
       case "Resume PDF":
         return <ResumePDF />;
       default:

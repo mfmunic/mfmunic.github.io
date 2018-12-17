@@ -1,0 +1,41 @@
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+#headerRow th {
+  width: 100px;
+  border-bottom: 1px solid gray;
+  margin: 0 0;
+}
+
+#headerRow th p {
+  transform: rotate(-10deg);
+  font-style: italic;
+  margin: 0 0;
+}
+
+.levelTitle {
+  border-left: 1px solid gray;
+}
+
+.tableBlock {
+  border-left: 1px solid gray;
+  border-bottom: 1px solid gray;
+  padding: 0 0;
+  height: 38px;
+}
+
+.skillTable {
+  border-bottom: 1px solid gray;
+}
+
+.skillBlockHalf {
+  height: 10px;
+  width: 50%;
+}
+
+.skillBlockFull {
+  height: 10px;
+  width: 100%;
+}
