@@ -13,10 +13,6 @@ class ResumeToolbar extends Component {
           alt="Sexy Beast"
           id="sexyBeast"
         />
-        {/* <ul>
-          <li>Work Experience</li>
-          <li>Skills</li>
-        </ul> */}
         <div id="portfolioTools">
           <ToolbarButton text="Work Experience" color={color} />
           <ToolbarButton text="Skills" color={color} />
