@@ -1,8 +1,11 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
+import ToolbarButton from "../utils/ToolbarButton";
+
 class HomeToolbar extends Component {
   render() {
+    const color = "orange";
     return (
       <div>
         <div className="imageHolder">
@@ -12,10 +15,10 @@ class HomeToolbar extends Component {
             id="mahToolbar"
           />
         </div>
-        <ul>
-          <li>Links</li>
-          <li>Email</li>
-        </ul>
+        <div id="portfolioTools">
+          <ToolbarButton text="E-Mail" color={color} />
+          <ToolbarButton text="Links" color={color} />
+        </div>
       </div>
     );
   }

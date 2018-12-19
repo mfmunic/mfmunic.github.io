@@ -7,10 +7,8 @@ import AboutText from "./texts/AboutText";
 class AboutDisplay extends Component {
   render() {
     const aboutWithBreaks = [];
-    _.forEach(AboutText, about => {
-      aboutWithBreaks.push(about);
-      aboutWithBreaks.push(<br />);
-      aboutWithBreaks.push(<br />);
+    _.forEach(AboutText, (about, index) => {
+      aboutWithBreaks.push(<p key={index}>{about}</p>);
     });
     return <div id="aboutDisplay">{aboutWithBreaks}</div>;
   }

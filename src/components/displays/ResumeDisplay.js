@@ -18,11 +18,6 @@ class ResumeDisplay extends Component {
   }
 
   render() {
-    // return (
-    //   <div>
-    //     <WorkExpDisplay />
-    //   </div>
-    // )
     const displayItem = this.decidedDisplay(this.props.display.toolbar);
     return <div>{displayItem}</div>;
   }

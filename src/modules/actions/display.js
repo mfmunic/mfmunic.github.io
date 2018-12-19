@@ -16,20 +16,49 @@ export function toolbar(toolbarItem) {
   };
 }
 
-export function mail() {
-  // const email = `<form method="POST" action="https://formspree.io/mfmunic@yahoo.com">
-  //   <input type="email" name="email" placeholder="mfmunic@gmail.com">
-  //   <textarea name="message" placeholder="Test Message"></textarea>
-  //   <button type="submit">Send Test</button>
-  // </form>`;
+export function email(text) {
+  return {
+    type: actionTypes.EMAIL_ADDRESS,
+    payload: text
+  };
+}
 
+export function subject(text) {
+  return {
+    type: actionTypes.EMAIL_SUBJECT,
+    payload: text
+  };
+}
+
+export function content(text) {
+  return {
+    type: actionTypes.EMAIL_CONTENT,
+    payload: text
+  };
+}
+
+export function mail(address, subject, content) {
   return {
     type: actionTypes.EMAIL,
     payload: axios({
       method: "post",
-      url: "https://formspree.io/mfmunic@yahoo.com",
-      data: { message: "Test" },
+      url: "/mail",
+      data: { address, subject, content },
       dataType: "json"
     })
+  };
+}
+
+export function failValid(failArr) {
+  return {
+    type: actionTypes.VALIDITRON,
+    payload: failArr
+  };
+}
+
+export function resetEmail() {
+  return {
+    type: actionTypes.EMAIL_RESET,
+    payload: false
   };
 }
