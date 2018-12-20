@@ -62,10 +62,10 @@ class EmailCI extends Component {
     } = this.props.display;
     return (
       <div id="emailDisplay">
-        <h1 className="orange-Text">
+        {/* <h1 className="orange-Text">
           Currently wrestling with server issues to get this back up!
-        </h1>
-        {/* {emailRecieved ? (
+        </h1> */}
+        {emailRecieved ? (
           <div>
             <h1 className="orange-Text">EMAIL SENT!</h1>
             <h3 className="orange-Text">
@@ -141,7 +141,7 @@ class EmailCI extends Component {
               Send It!
             </div>
           </form>
-        )} */}
+        )}
       </div>
     );
   }
