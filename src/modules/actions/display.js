@@ -42,7 +42,7 @@ export function mail(address, subject, content) {
     type: actionTypes.EMAIL,
     payload: axios({
       method: "post",
-      url: "/mail",
+      url: "https://floating-retreat-82767.herokuapp.com/mail",
       data: { address, subject, content },
       dataType: "json"
     })
