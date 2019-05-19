@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
+@import './utils/levels';
+@import './utils/colors';
+@import './components/mainPage';
+@import './components/header';
+@import './components/sidebar';
+@import './components/display';
+@import './components/menuItem';
+@import './components/homepageDisplay';
+@import './utils';
+
+body {
+  margin: 0;
+  padding: 0;
+  /* height: 100vh; */
+  /* width: 100vw; */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

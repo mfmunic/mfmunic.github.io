@@ -1,0 +1,77 @@
+$blue: #506296;
+$green: #2ea113;
+$orange: #ff7733;
+$yellow: #edb458;
+$red: #990000;
+
+.BG {
+  &--blue {
+    background-color: $blue;
+  }
+  &--green {
+    background-color: $green;
+  }
+  &--orange {
+    background-color: $orange;
+  }
+  &--yellow {
+    background-color: $yellow;
+  }
+  &--red {
+    background-color: $red;
+  }
+}
+
+.Text {
+  &--blue {
+    color: $blue;
+  }
+  &--green {
+    color: $green;
+  }
+  &--orange {
+    color: $orange;
+  }
+  &--yellow {
+    color: $yellow;
+  }
+  &--red {
+    color: $red;
+  }
+}
+
+.Border {
+  &--blue {
+    border-color: $blue;
+  }
+  &--green {
+    border-color: $green;
+  }
+  &--orange {
+    border-color: $orange;
+  }
+  &--yellow {
+    border-color: $yellow;
+  }
+  &--red {
+    border-color: $red;
+  }
+}
+
+.HeaderBorder {
+  &--blue {
+    border-image: linear-gradient(to right, $blue 0%, $blue 100%);
+  }
+  &--green {
+    border-image: linear-gradient(to right, $blue 0%, $green 100%);
+  }
+  &--orange {
+    border-image: linear-gradient(to right, $blue 0%, $orange 100%);
+  }
+  &--yellow {
+    border-image: linear-gradient(to right, $blue 0%, $yellow 100%);
+  }
+  &--red {
+    border-image: linear-gradient(to right, $blue 0%, $red 100%);
+  }
+}
