@@ -10,7 +10,7 @@ const initialState = {};
 const enhancers = [];
 const middleware = [promiseMiddleware()];
 if (process.env.NODE_ENV === "development") {
-  const devToolsExtension = window.__REDUX_DEVTOOLS_EXTENSION__;
+  const devToolsExtension = window.devToolsExtension;
 
   if (typeof devToolsExtension === "function") {
     enhancers.push(devToolsExtension());

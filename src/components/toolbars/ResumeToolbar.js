@@ -1,11 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
-import ToolbarButton from "../utils/ToolbarButton";
-
 class ResumeToolbar extends Component {
   render() {
-    const color = "yellow";
     return (
       <div>
         <img
@@ -13,11 +10,10 @@ class ResumeToolbar extends Component {
           alt="Sexy Beast"
           id="sexyBeast"
         />
-        <div id="portfolioTools">
-          <ToolbarButton text="Work Experience" color={color} />
-          <ToolbarButton text="Skills" color={color} />
-          <ToolbarButton text="Resume PDF" color={color} />
-        </div>
+        <ul>
+          <li>Work Experience</li>
+          <li>Skills</li>
+        </ul>
       </div>
     );
   }

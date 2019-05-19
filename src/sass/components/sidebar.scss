@@ -1,0 +1,48 @@
+.sidebar {
+  background-color: $blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 150px;
+  &-menu {
+    margin-top: 50px;
+  }
+  &-copyright {
+    color: white;
+    display: flex;
+    align-self: center;
+    justify-self: flex-end;
+  }
+}
+
+.logo {
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 6px white solid;
+  width: 194px;
+  height: 194px;
+  color: white;
+  transform: rotate(350deg);
+  transition: 500ms;
+  &-border {
+    margin: 10px -20px 0 10px;
+    min-width: 216px;
+    min-height: 216px;
+    display: flex;
+    align-items: center;
+  }
+  &-name {
+    font-family: 'Noto Serif', serif;
+    font-size: 58px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 11px;
+    cursor: default;
+    &-Marc {
+      margin-top: 25px;
+    }
+    &-Munic {
+      margin-top: -15px;
+    }
+  }
+}

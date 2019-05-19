@@ -1,25 +1,20 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
-import WorkExpDisplay from "./resumeItems/WorkExpRI";
-import ResumePDF from "./resumeItems/ResumePDF";
-import SkillsDisplay from "./resumeItems/SkillsRI";
-
 class ResumeDisplay extends Component {
-  decidedDisplay(chosen) {
-    switch (chosen) {
-      case "Skills":
-        return <SkillsDisplay />;
-      case "Resume PDF":
-        return <ResumePDF />;
-      default:
-        return <WorkExpDisplay />;
-    }
-  }
-
   render() {
-    const displayItem = this.decidedDisplay(this.props.display.toolbar);
-    return <div>{displayItem}</div>;
+    return (
+      <div id="resumeDisplay">
+        <iframe
+          src={require("./texts/resume.pdf")}
+          height="100%"
+          width="100%"
+          title="myFrame"
+          id="resumeIframe"
+        />
+        {/* <embed src="/texts/resume.pdf" width="100%" height="100%" /> */}
+      </div>
+    );
   }
 }
 

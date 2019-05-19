@@ -1,0 +1,28 @@
+.homeDisplay {
+  &-intro {
+    color: black;
+    text-align: center;
+    width: 100%;
+    border-top: 3px solid $blue;
+    border-bottom: 3px solid $blue;
+    h1 {
+      margin: 0;
+    }
+    &-background {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100vw;
+      height: 220px;
+      background-color: #fff;
+      padding-top: 15px;
+    }
+  }
+}
+
+.homeImages {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: calc(100% - 240px);
+}

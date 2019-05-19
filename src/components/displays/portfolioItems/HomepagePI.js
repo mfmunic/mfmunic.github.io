@@ -10,8 +10,8 @@ class HomepagePI extends Component {
         <img
           className="preview"
           id="homepagePI"
+          alt=""
           src={require("../../utils/images/homepage.png")}
-          alt="Homepage"
         />
         <p>{homeText}</p>
       </div>

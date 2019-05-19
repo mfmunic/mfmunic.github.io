@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
-import triviagameText from "../texts/TriviagameText";
+import triviagameText from '../texts/TriviagameText';
 
 class Triviagame extends Component {
   render() {
@@ -10,13 +10,12 @@ class Triviagame extends Component {
         <img
           className="preview"
           id="triviagame"
-          src={require("../../utils/images/triviagameSG.png")}
+          src={require('../../utils/images/triviagameSG.png')}
           alt="Trivia game"
         />
         <a
           href="https://mfmunic.github.io/triviagame/"
-          target="_blank"
-          rel="noopener noreferrer"
+          target="noopener"
           className="buttonLinks"
         >
           <button>Trivia Game</button>

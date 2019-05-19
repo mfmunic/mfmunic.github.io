@@ -15,8 +15,7 @@ class GOH extends Component {
         />
         <a
           href="https://mfmunic.github.io/Hangman-Game/"
-          target="_blank"
-          rel="noopener noreferrer"
+          target="noopener"
           className="buttonLinks"
         >
           <button>Game of Hangman</button>
