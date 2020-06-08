@@ -1,6 +1,5 @@
 #workExpTotal {
-  /* width: 50%; */
-  max-width: calc(100% - 300px);
+  max-width: calc(100% - 224px);
   margin-left: 20px;
 }
 
