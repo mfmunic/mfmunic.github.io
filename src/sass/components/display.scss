@@ -1,11 +1,15 @@
 .display {
   margin-top: 20px;
-  height: calc(100vh - 83px);
+  // height: calc(100vh - 83px);
   overflow: auto;
-  // width: 100%;
-  /* height: 100vh; */
   &--padding {
     padding: 100px 0 0 100px;
+  }
+}
+
+@media only screen and (min-height: 775px) {
+  .display {
+    height: calc(100vh - 83px);
   }
 }
 

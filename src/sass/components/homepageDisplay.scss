@@ -11,11 +11,9 @@
     &-background {
       position: absolute;
       left: 0;
-      bottom: 0;
+      bottom: calc(100vh - 85%);
       width: 100vw;
-      height: 220px;
       background-color: #fff;
-      padding-top: 15px;
     }
   }
 }
@@ -25,4 +23,21 @@
   justify-content: space-around;
   align-items: center;
   height: calc(100% - 240px);
+}
+
+.filler {
+  background-color: $blue;
+  width: 10px;
+  height: 450px;
+}
+
+@media only screen and (max-width: 1350px) {
+  .homeDisplay {
+    &-intro {
+      &-background {
+        left: 150px;
+        width: calc(100vw - 150px);
+      }
+    }
+  }
 }
