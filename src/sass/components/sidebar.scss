@@ -11,8 +11,13 @@
   &-copyright {
     color: white;
     display: flex;
+    flex-direction: column;
     align-self: center;
+    align-items: center;
     justify-self: flex-end;
+    &-name {
+      text-decoration: underline;
+    }
   }
 }
 

@@ -216,8 +216,13 @@
 .sidebar-copyright {
   color: white;
   display: flex;
+  flex-direction: column;
   align-self: center;
+  align-items: center;
   justify-self: flex-end;
+}
+.sidebar-copyright-name {
+  text-decoration: underline;
 }
 
 .logo {
