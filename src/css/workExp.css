@@ -1,6 +1,7 @@
 #workExpTotal {
   max-width: calc(100% - 224px);
   margin-left: 20px;
+  padding-bottom: 50px;
 }
 
 .titleAndDates {
