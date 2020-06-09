@@ -6,6 +6,7 @@ import AboutDisplay from './displays/AboutDisplay';
 import ResumeDisplay from './displays/ResumeDisplay';
 import PortfolioDisplay from './displays/PortfolioDisplay';
 import ContactDisplay from './displays/ContactDisplay';
+import NoMobileDisplay from './displays/NoMobileDisplay';
 
 class Display extends Component {
   displayPicker(location) {
@@ -19,28 +20,20 @@ class Display extends Component {
       case 'Portfolio':
         return <PortfolioDisplay />;
       default:
-        return <HomeDisplay />;
+        return window.innerWidth < 770 ? <NoMobileDisplay /> : <HomeDisplay />;
     }
   }
   render() {
     const { location } = this.props.display;
     const display = this.displayPicker(location);
-    return (
-      <div
-        className={`display ${
-          location !== 'Homepage' ? 'display--padding' : ''
-        }`}
-      >
-        {display}
-      </div>
-    );
+    return <div className={`display ${location !== 'Homepage' ? 'display--padding' : ''}`}>{display}</div>;
   }
 }
 
 function mapStateToProps(state) {
   return {
     routing: state.routing,
-    display: state.display
+    display: state.display,
   };
 }
 
