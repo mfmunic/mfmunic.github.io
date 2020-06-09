@@ -1,16 +1,16 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
-import WorkExpDisplay from "./resumeItems/WorkExpRI";
-import ResumePDF from "./resumeItems/ResumePDF";
-import SkillsDisplay from "./resumeItems/SkillsRI";
+import WorkExpDisplay from './resumeItems/WorkExpRI';
+import ResumePDF from './resumeItems/ResumePDF';
+import SkillsDisplay from './resumeItems/SkillsRI';
 
 class ResumeDisplay extends Component {
   decidedDisplay(chosen) {
     switch (chosen) {
-      case "Skills":
+      case 'Skills':
         return <SkillsDisplay />;
-      case "Resume PDF":
+      case 'Resume PDF':
         return <ResumePDF />;
       default:
         return <WorkExpDisplay />;
@@ -19,14 +19,14 @@ class ResumeDisplay extends Component {
 
   render() {
     const displayItem = this.decidedDisplay(this.props.display.toolbar);
-    return <div>{displayItem}</div>;
+    return displayItem;
   }
 }
 
 function mapStateToProps(state) {
   return {
     routing: state.routing,
-    display: state.display
+    display: state.display,
   };
 }
 

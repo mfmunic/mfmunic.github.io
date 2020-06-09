@@ -1,0 +1,8 @@
+#skillsDisplay {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  & table {
+    margin: 0;
+  }
+}

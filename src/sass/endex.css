@@ -216,8 +216,13 @@
 .sidebar-copyright {
   color: white;
   display: flex;
+  flex-direction: column;
   align-self: center;
+  align-items: center;
   justify-self: flex-end;
+}
+.sidebar-copyright-name {
+  text-decoration: underline;
 }
 
 .logo {
@@ -254,17 +259,13 @@
 
 .display {
   margin-top: 20px;
+  height: calc(100vh - 133px);
   overflow: auto;
 }
 .display--padding {
-  padding: 100px 0 0 100px;
+  padding: 50px 0 0 100px;
 }
 
-@media only screen and (min-height: 775px) {
-  .display {
-    height: calc(100vh - 83px);
-  }
-}
 .links ul {
   list-style: none;
 }
@@ -430,6 +431,15 @@
 .noMobile {
   text-align: center;
   padding-left: 82px;
+}
+
+#skillsDisplay {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+#skillsDisplay table {
+  margin: 0;
 }
 
 .blue-BG {
