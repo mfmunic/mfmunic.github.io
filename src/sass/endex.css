@@ -303,8 +303,18 @@
   width: 64%;
 }
 
+.preview--outerFrame {
+  width: 100%;
+  border: 3px solid #2ea113;
+  border-radius: 10px;
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+}
+
 .preview {
   width: 100%;
+  border-radius: 10px;
 }
 
 #gameofhangman {

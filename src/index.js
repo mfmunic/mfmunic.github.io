@@ -13,7 +13,7 @@ render(
   <Provider store={store}>
     <MainPage />
   </Provider>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
 
 // registerServiceWorker();
