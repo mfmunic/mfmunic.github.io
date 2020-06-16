@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ad55541394a3a6453f7a9aa21792fb27",
+    "revision": "98a9cd961ccbd47f628e932d2277cb4e",
     "url": "/index.html"
   },
   {
-    "revision": "8f8bd2788820246a8958",
-    "url": "/static/css/main.bf5a8683.chunk.css"
+    "revision": "f2529fa91946c3c8d5ab",
+    "url": "/static/css/main.29a3fa82.chunk.css"
   },
   {
     "revision": "299c02781241da1b6cab",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.2f0415c7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8f8bd2788820246a8958",
-    "url": "/static/js/main.008d3a51.chunk.js"
+    "revision": "f2529fa91946c3c8d5ab",
+    "url": "/static/js/main.6cc00837.chunk.js"
   },
   {
     "revision": "ace09a6339ceaeeac0ab",
@@ -72,8 +72,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/marcandtractor.f952a76b.png"
   },
   {
-    "revision": "dd1f32a5c0978e83ca34f0a00e4bdb35",
-    "url": "/static/media/resume.dd1f32a5.pdf"
+    "revision": "28a023fcbafaa2d8a0e971e1c2d71b32",
+    "url": "/static/media/resume.28a023fc.pdf"
   },
   {
     "revision": "dfad213e6b80264bed27b8aa802e936b",
