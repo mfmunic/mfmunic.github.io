@@ -20,7 +20,7 @@ class GOH extends Component {
           target='_blank'
           rel='noopener noreferrer'
           className='buttonLinks'>
-          <button>Game of Hangman</button>
+          Game of Hangman
         </a>
         <p>{gohText}</p>
       </div>

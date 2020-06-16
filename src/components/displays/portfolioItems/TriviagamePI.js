@@ -20,7 +20,7 @@ class Triviagame extends Component {
           target='_blank'
           rel='noopener noreferrer'
           className='buttonLinks'>
-          <button>Trivia Game</button>
+          Trivia Game
         </a>
         <p>{triviagameText}</p>
       </div>
