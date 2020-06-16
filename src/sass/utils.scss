@@ -114,7 +114,8 @@
   cursor: pointer;
 }
 
-.buttonLinks button {
+.buttonLinks {
+  padding: 5px;
   font-size: 35px;
   background-color: #2ea113;
   color: white;
