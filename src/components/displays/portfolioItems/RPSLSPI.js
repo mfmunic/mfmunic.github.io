@@ -15,7 +15,7 @@ class RPSLS extends Component {
           target='_blank'
           rel='noopener noreferrer'
           className='buttonLinks'>
-          <button>Rock Paper Scissors Lizard Spock</button>
+          Rock Paper Scissors Lizard Spock
         </a>
         <p>{rpslsText}</p>
       </div>
