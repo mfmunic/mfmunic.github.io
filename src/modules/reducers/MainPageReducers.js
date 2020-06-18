@@ -8,6 +8,7 @@ const initialState = {
   emailSubject: '',
   emailContent: '',
   emailRecieved: false,
+  emailPending: false,
   addressFail: false,
   contentFail: false,
 };
@@ -64,6 +65,13 @@ export default function (state = initialState, action = {}) {
       return {
         ...state,
         emailRecieved: action.payload,
+        emailPending: false,
+      };
+
+    case `${actionTypes.EMAIL}_PENDING`:
+      return {
+        ...state,
+        emailPending: true,
       };
 
     case `${actionTypes.EMAIL_RESET}`:
