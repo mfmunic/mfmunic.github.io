@@ -2,10 +2,10 @@ import React from 'react';
 
 const EmailRecieved = () => {
   return [
-    <h1 key='1' className='orange-Text'>
+    <h1 key='1' className='Text--orange'>
       EMAIL SENT!
     </h1>,
-    <h3 key='2' className='orange-Text'>
+    <h3 key='2' className='Text--orange'>
       I look forward to connecting with you.
     </h3>,
   ];

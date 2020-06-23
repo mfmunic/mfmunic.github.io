@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import * as display from "../../modules/actions/display";
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import * as display from '../../modules/actions/display';
 
 class MenuItem extends Component {
   setLocation(item, color) {
@@ -10,15 +10,16 @@ class MenuItem extends Component {
   render() {
     const { text, color } = this.props;
     return (
-      <div id="fullMenuItem" onClick={this.setLocation.bind(this, text, color)}>
-        <div id="menuShadow" />
-        <div className="menuItem">
-          <div id={`menuTail-${color}`} />
-          <div className={`${color}-BG menuRibbon`}>
+      <div className='fullMenuItem' onClick={this.setLocation.bind(this, text, color)}>
+        <div className='menuShadow' />
+        <div className='menuItem'>
+          <div className={`menuTail menuTail-${color}`} />
+          <div className={`BG--${color} menuRibbon`}>
             <p>
-              <strong>{text === "Resume" ? "R\u00E9sum\u00E9" : text}</strong>
+              <strong>{text === 'Resume' ? 'R\u00E9sum\u00E9' : text}</strong>
             </p>
           </div>
+          <div className={`menuPointer menuPointer-${color}`} />
         </div>
       </div>
     );
@@ -28,7 +29,7 @@ class MenuItem extends Component {
 function mapStateToProps(state) {
   return {
     routing: state.routing,
-    display: state.display
+    display: state.display,
   };
 }
 

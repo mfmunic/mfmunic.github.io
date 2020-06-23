@@ -1,47 +1,47 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import _ from "lodash";
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import _ from 'lodash';
 
-import skillsArr from "../texts/SkillsText";
+import skillsArr from '../texts/SkillsText';
 
 class SkillsDisplay extends Component {
   pickColor(rating) {
     switch (rating) {
       case 1:
-        return "red-BG";
+        return 'red';
       case 2:
-        return "orange-BG";
+        return 'orange';
       case 3:
-        return "yellow-BG";
+        return 'yellow';
       case 4:
-        return "green-BG";
+        return 'green';
       default:
-        return "blue-BG";
+        return 'blue';
     }
   }
   render() {
-    const skillsArrOrdered = _.orderBy(skillsArr, ["skill"]);
+    const skillsArrOrdered = _.orderBy(skillsArr, ['skill']);
     return (
-      <div id="skillsDisplay">
+      <div id='skillsDisplay'>
         <table>
           <thead>
-            <tr id="headerRow">
-              <th id="skillTitle">
+            <tr id='headerRow'>
+              <th id='skillTitle'>
                 <p>Skill</p>
               </th>
-              <th id="level1Title" className="levelTitle">
+              <th id='level1Title' className='levelTitle'>
                 <p>Heard of it</p>
               </th>
-              <th id="level2Title" className="levelTitle">
+              <th id='level2Title' className='levelTitle'>
                 <p>Have written in it</p>
               </th>
-              <th id="level3Title" className="levelTitle">
+              <th id='level3Title' className='levelTitle'>
                 <p>Competant</p>
               </th>
-              <th id="level4Title" className="levelTitle">
+              <th id='level4Title' className='levelTitle'>
                 <p>Expert</p>
               </th>
-              <th id="level5Title" className="levelTitle">
+              <th id='level5Title' className='levelTitle'>
                 <p>Can Teach It</p>
               </th>
             </tr>
@@ -50,56 +50,38 @@ class SkillsDisplay extends Component {
             {_.map(skillsArrOrdered, (skill, index) => {
               return (
                 <tr key={index}>
-                  <td className="skillTable">{skill.skill}</td>
-                  <td className="tableBlock">
+                  <td className='skillTable'>{skill.skill}</td>
+                  <td className='tableBlock'>
                     <div
                       className={`${
-                        skill.rating === 1
-                          ? "skillBlockHalf"
-                          : skill.rating > 1
-                          ? "skillBlockFull"
-                          : ""
-                      } ${this.pickColor(skill.rating)}`}
+                        skill.rating === 1 ? 'skillBlockHalf' : skill.rating > 1 ? 'skillBlockFull' : ''
+                      } BG--${this.pickColor(skill.rating)}`}
                     />
                   </td>
-                  <td className="tableBlock">
+                  <td className='tableBlock'>
                     <div
                       className={`${
-                        skill.rating === 2
-                          ? "skillBlockHalf"
-                          : skill.rating > 2
-                          ? "skillBlockFull"
-                          : ""
-                      } ${this.pickColor(skill.rating)}`}
+                        skill.rating === 2 ? 'skillBlockHalf' : skill.rating > 2 ? 'skillBlockFull' : ''
+                      } BG--${this.pickColor(skill.rating)}`}
                     />
                   </td>
-                  <td className="tableBlock">
+                  <td className='tableBlock'>
                     <div
                       className={`${
-                        skill.rating === 3
-                          ? "skillBlockHalf"
-                          : skill.rating > 3
-                          ? "skillBlockFull"
-                          : ""
-                      } ${this.pickColor(skill.rating)}`}
+                        skill.rating === 3 ? 'skillBlockHalf' : skill.rating > 3 ? 'skillBlockFull' : ''
+                      } BG--${this.pickColor(skill.rating)}`}
                     />
                   </td>
-                  <td className="tableBlock">
+                  <td className='tableBlock'>
                     <div
                       className={`${
-                        skill.rating === 4
-                          ? "skillBlockHalf"
-                          : skill.rating > 4
-                          ? "skillBlockFull"
-                          : ""
-                      } ${this.pickColor(skill.rating)}`}
+                        skill.rating === 4 ? 'skillBlockHalf' : skill.rating > 4 ? 'skillBlockFull' : ''
+                      } BG--${this.pickColor(skill.rating)}`}
                     />
                   </td>
-                  <td className="tableBlock">
+                  <td className='tableBlock'>
                     <div
-                      className={`${
-                        skill.rating === 5 ? "skillBlockHalf" : ""
-                      } ${this.pickColor(skill.rating)}`}
+                      className={`${skill.rating === 5 ? 'skillBlockHalf' : ''} BG--${this.pickColor(skill.rating)}`}
                     />
                   </td>
                 </tr>
@@ -115,7 +97,7 @@ class SkillsDisplay extends Component {
 function mapStateToProps(state) {
   return {
     routing: state.routing,
-    display: state.display
+    display: state.display,
   };
 }
 

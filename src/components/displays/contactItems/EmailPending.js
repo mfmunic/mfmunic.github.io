@@ -3,7 +3,7 @@ import giffers from './emailsending.gif';
 
 const EmailPending = () => {
   return (
-    <h1 className='orange-Text'>
+    <h1 className='Text--orange'>
       Sending...
       <div>
         <img
