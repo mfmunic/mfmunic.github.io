@@ -1,0 +1,25 @@
+.toolbarButton {
+  margin-bottom: 5px;
+  text-align: center;
+  padding: 10px;
+  font-size: 23px;
+  &-active {
+    color: white;
+    &:hover {
+      cursor: context-menu;
+    }
+  }
+  &-inactive {
+    background-color: white;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.buttonLinks {
+  padding: 5px;
+  font-size: 35px;
+  background-color: #2ea113;
+  color: white;
+}
