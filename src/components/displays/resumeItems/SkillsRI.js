@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import _ from 'lodash';
+import _ from 'lodash/orderBy';
 
 import skillsArr from '../texts/SkillsText';
 
@@ -20,7 +20,7 @@ class SkillsDisplay extends Component {
     }
   }
   render() {
-    const skillsArrOrdered = _.orderBy(skillsArr, ['skill']);
+    const skillsArrOrdered = _(skillsArr, ['skill']);
     return (
       <div id='skillsDisplay'>
         <table>
@@ -47,7 +47,7 @@ class SkillsDisplay extends Component {
             </tr>
           </thead>
           <tbody>
-            {_.map(skillsArrOrdered, (skill, index) => {
+            {skillsArrOrdered.map((skill, index) => {
               return (
                 <tr key={index}>
                   <td className='skillTable'>{skill.skill}</td>
