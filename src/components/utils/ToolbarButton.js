@@ -12,7 +12,9 @@ class ToolbarButton extends Component {
     const active = text === this.props.display.toolbar ? 'active' : 'inactive';
     const textColor = active === 'active' ? `BG--${color}` : `Text--${color}`;
     return (
-      <div className={`toolbarButton-${active} ${textColor}`} onClick={this.toolbarLocation.bind(this, text)}>
+      <div
+        className={`toolbarButton toolbarButton-${active} ${textColor}`}
+        onClick={this.toolbarLocation.bind(this, text)}>
         {text}
       </div>
     );

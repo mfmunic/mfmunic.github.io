@@ -118,6 +118,9 @@
   padding-left: 90px;
   margin: 0;
 }
+#header:hover {
+  cursor: context-menu;
+}
 
 #headerText {
   margin: 5px 0;
@@ -347,6 +350,9 @@
   height: 50px;
   display: flex;
   align-items: center;
+}
+.menuRibbon:hover {
+  cursor: pointer;
 }
 
 .menuTail {
@@ -579,38 +585,47 @@ table {
   list-style: none;
 }
 
-#nameLogo:hover {
-  cursor: context-menu;
-}
-
-.menuRibbon:hover {
-  cursor: pointer;
-}
-
-#header:hover {
-  cursor: context-menu;
-}
-
-.toolbarButton-active {
+.toolbarButton {
   margin-bottom: 5px;
   text-align: center;
-  color: white;
   padding: 10px;
   font-size: 23px;
 }
-
+.toolbarButton-active {
+  color: white;
+}
 .toolbarButton-active:hover {
   cursor: context-menu;
 }
-
 .toolbarButton-inactive {
+  background-color: white;
+}
+.toolbarButton-inactive:hover {
+  cursor: pointer;
+}
+
+.buttonLinks {
+  padding: 5px;
+  font-size: 35px;
+  background-color: #2ea113;
+  color: white;
+}
+
+.toolbarButton {
   margin-bottom: 5px;
   text-align: center;
-  background-color: white;
   padding: 10px;
   font-size: 23px;
 }
-
+.toolbarButton-active {
+  color: white;
+}
+.toolbarButton-active:hover {
+  cursor: context-menu;
+}
+.toolbarButton-inactive {
+  background-color: white;
+}
 .toolbarButton-inactive:hover {
   cursor: pointer;
 }
