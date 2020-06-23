@@ -1,5 +1,11 @@
 .fullMenuItem {
   margin-top: 20px;
+  &:hover .menuShadow {
+    visibility: hidden;
+  }
+  &:hover .menuPointer {
+    visibility: visible;
+  }
 }
 
 .menuItem {
@@ -19,62 +25,49 @@
   align-items: center;
 }
 
-.greenBG {
-  background-color: #2ea113;
-}
-
-#menuTail-green {
+.menuTail {
   width: 0;
   height: 0;
-  border-bottom: 50px solid #2ea113;
   border-left: 35px solid transparent;
+  &-green {
+    border-bottom: 50px solid $green;
+  }
+  &-orange {
+    border-bottom: 50px solid $orange;
+  }
+  &-yellow {
+    border-bottom: 50px solid $yellow;
+  }
+  &-red {
+    border-bottom: 50px solid $red;
+  }
 }
 
-.orangeBG {
-  background-color: #ff7733;
-}
-
-#menuTail-orange {
-  width: 0;
-  height: 0;
-  border-bottom: 50px solid #ff7733;
-  border-left: 35px solid transparent;
-}
-
-.yellowBG {
-  background-color: #edb458;
-}
-
-#menuTail-yellow {
-  width: 0;
-  height: 0;
-  border-bottom: 50px solid #edb458;
-  border-left: 35px solid transparent;
-}
-
-.redBG {
-  background-color: #990000;
-}
-
-#menuTail-red {
-  width: 0;
-  height: 0;
-  border-bottom: 50px solid #990000;
-  border-left: 35px solid transparent;
-}
-
-#menuShadow {
+.menuShadow {
   width: 0;
   height: 0px;
-  margin-left: 150px;
   border-top: 4px solid transparent;
   border-left: 5px solid black;
   border-bottom: 9px solid transparent;
+  position: relative;
+  left: 150px;
 }
 
-/* #menuShadow-red:active {
+.menuPointer {
+  visibility: hidden;
   width: 0;
   height: 0;
-  border-top: 50px solid #990000;
   border-right: 35px solid transparent;
-} */
+  &-green {
+    border-top: 50px solid $green;
+  }
+  &-orange {
+    border-top: 50px solid $orange;
+  }
+  &-yellow {
+    border-top: 50px solid $yellow;
+  }
+  &-red {
+    border-top: 50px solid $red;
+  }
+}

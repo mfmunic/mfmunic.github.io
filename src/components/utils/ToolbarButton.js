@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import * as display from "../../modules/actions/display";
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import * as display from '../../modules/actions/display';
 
 class ToolbarButton extends Component {
   toolbarLocation(item) {
@@ -9,13 +9,10 @@ class ToolbarButton extends Component {
 
   render() {
     const { text, color } = this.props;
-    const active = text === this.props.display.toolbar ? "active" : "inactive";
-    const textColor = active === "active" ? `${color}-BG` : `${color}-Text`;
+    const active = text === this.props.display.toolbar ? 'active' : 'inactive';
+    const textColor = active === 'active' ? `BG--${color}` : `Text--${color}`;
     return (
-      <div
-        className={`toolbarButton-${active} ${textColor}`}
-        onClick={this.toolbarLocation.bind(this, text)}
-      >
+      <div className={`toolbarButton-${active} ${textColor}`} onClick={this.toolbarLocation.bind(this, text)}>
         {text}
       </div>
     );
@@ -25,7 +22,7 @@ class ToolbarButton extends Component {
 function mapStateToProps(state) {
   return {
     routing: state.routing,
-    display: state.display
+    display: state.display,
   };
 }
 
