@@ -1,40 +1,32 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React, { useContext } from "react";
 
-import HomeDisplay from './displays/HomeDisplay';
-import AboutDisplay from './displays/AboutDisplay';
-import ResumeDisplay from './displays/ResumeDisplay';
-import PortfolioDisplay from './displays/PortfolioDisplay';
-import ContactDisplay from './displays/ContactDisplay';
-import NoMobileDisplay from './displays/NoMobileDisplay';
+import { AppContext } from "../context";
 
-class Display extends Component {
-  displayPicker(location) {
+import { HomeDisplay } from "./displays/HomeDisplay";
+import { AboutDisplay } from "./displays/AboutDisplay";
+import { ResumeDisplay } from "./displays/ResumeDisplay";
+import { ContactDisplay } from "./displays/ContactDisplay";
+import { NoMobileDisplay } from "./displays/NoMobileDisplay";
+import { PortfolioDisplay } from "./displays/PortfolioDisplay";
+
+export const Display = () => {
+  const { location } = useContext(AppContext);
+
+  const displayPicker = (location) => {
     switch (location) {
-      case 'About':
+      case "About":
         return <AboutDisplay />;
-      case 'Contact':
+      case "Contact":
         return <ContactDisplay />;
-      case 'Resume':
+      case "Resume":
         return <ResumeDisplay />;
-      case 'Portfolio':
+      case "Portfolio":
         return <PortfolioDisplay />;
       default:
         return window.innerWidth < 770 ? <NoMobileDisplay /> : <HomeDisplay />;
     }
-  }
-  render() {
-    const { location } = this.props.display;
-    const display = this.displayPicker(location);
-    return <div className={`display ${location !== 'Homepage' ? 'display--padding' : ''}`}>{display}</div>;
-  }
-}
-
-function mapStateToProps(state) {
-  return {
-    routing: state.routing,
-    display: state.display,
   };
-}
 
-export default connect(mapStateToProps)(Display);
+  const display = displayPicker(location);
+  return <div className={`display ${location !== "Homepage" ? "display--padding" : ""}`}>{display}</div>;
+};

@@ -1,19 +1,23 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React, { useEffect, useContext } from "react";
 
-import EmailForm from './EmailForm';
-import EmailRecieved from './EmailRecieved';
-import EmailPending from './EmailPending';
-import * as record from '../../../modules/actions/display';
+import { AppContext } from "../../context";
 
-class EmailCI extends Component {
-  componentWillUnmount() {
-    this.props.dispatch(record.failValid([]));
-    this.props.dispatch(record.resetEmail());
-  }
+import EmailForm from "./EmailForm";
+import EmailRecieved from "./EmailRecieved";
+import EmailPending from "./EmailPending";
 
-  decidesScreen() {
-    const { emailRecieved, emailPending } = this.props.display;
+export const EmailCI = () => {
+  const { emailRecieved, emailPending, failValid, resetEmail } = useContext(AppContext);
+
+  // TODO
+  useEffect(() => {
+    return () => {
+      failValid([]);
+      resetEmail();
+    };
+  });
+
+  const decidesScreen = () => {
     if (emailRecieved) {
       return <EmailRecieved />;
     } else if (emailPending) {
@@ -21,16 +25,6 @@ class EmailCI extends Component {
     } else {
       return <EmailForm />;
     }
-  }
-  render() {
-    return <div id='emailDisplay'>{this.decidesScreen()}</div>;
-  }
-}
-
-function mapStateToProps(state) {
-  return {
-    display: state.display,
   };
-}
-
-export default connect(mapStateToProps)(EmailCI);
+  return <div id="emailDisplay">{decidesScreen()}</div>;
+};

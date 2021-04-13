@@ -1,31 +1,21 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import * as display from '../../modules/actions/display';
+import React, { useContext } from "react";
 
-class ToolbarButton extends Component {
-  toolbarLocation(item) {
-    this.props.dispatch(display.toolbar(item));
-  }
+import { AppContext } from "../../context";
 
-  render() {
-    const { text, color } = this.props;
-    const active = text === this.props.display.toolbar ? 'active' : 'inactive';
-    const textColor = active === 'active' ? `BG--${color}` : `Text--${color}`;
-    return (
-      <div
-        className={`toolbarButton toolbarButton-${active} ${textColor}`}
-        onClick={this.toolbarLocation.bind(this, text)}>
-        {text}
-      </div>
-    );
-  }
-}
+export const ToolbarButton = (props) => {
+  const { setAppState } = useContext(AppContext);
+  const { text, color } = props;
 
-function mapStateToProps(state) {
-  return {
-    routing: state.routing,
-    display: state.display,
-  };
-}
-
-export default connect(mapStateToProps)(ToolbarButton);
+  const active = text === this.props.display.toolbar ? "active" : "inactive";
+  const textColor = active === "active" ? `BG--${color}` : `Text--${color}`;
+  return (
+    <div
+      className={`toolbarButton toolbarButton-${active} ${textColor}`}
+      onClick={() => {
+        setAppState({ toolbar: text });
+      }}
+    >
+      {text}
+    </div>
+  );
+};

@@ -1,33 +1,17 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
+import React from "react";
 
-import ToolbarButton from "../utils/ToolbarButton";
+import { ToolbarButton } from "../utils/ToolbarButton";
 
-class ResumeToolbar extends Component {
-  render() {
-    const color = "yellow";
-    return (
-      <div>
-        <img
-          src={require("../utils/images/Marc.png")}
-          alt="Sexy Beast"
-          id="sexyBeast"
-        />
-        <div id="portfolioTools">
-          <ToolbarButton text="Work Experience" color={color} />
-          <ToolbarButton text="Skills" color={color} />
-          <ToolbarButton text="Resume PDF" color={color} />
-        </div>
+export const ResumeToolbar = () => {
+  const color = "yellow";
+  return (
+    <div>
+      <img src={require("../utils/images/Marc.png")} alt="Sexy Beast" id="sexyBeast" />
+      <div id="portfolioTools">
+        <ToolbarButton text="Work Experience" color={color} />
+        <ToolbarButton text="Skills" color={color} />
+        <ToolbarButton text="Resume PDF" color={color} />
       </div>
-    );
-  }
-}
-
-function mapStateToProps(state) {
-  return {
-    routing: state.routing,
-    display: state.display
-  };
-}
-
-export default connect(mapStateToProps)(ResumeToolbar);
+    </div>
+  );
+};

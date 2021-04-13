@@ -1,29 +1,17 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React from "react";
 
-import Display from './Display';
-import Header from './Header';
-import Sidebar from './Sidebar';
+import { Header } from "./Header";
+import { Sidebar } from "./Sidebar";
+import { Display } from "./Display";
 
-class MainPage extends Component {
-  render() {
-    return (
-      <div id='fullPage'>
-        <Sidebar />
-        <div id='notSidebar'>
-          <Header />
-          <Display />
-        </div>
+export const MainPage = () => {
+  return (
+    <div id="fullPage">
+      <Sidebar />
+      <div id="notSidebar">
+        <Header />
+        <Display />
       </div>
-    );
-  }
-}
-
-function mapStateToProps(state) {
-  return {
-    routing: state.routing,
-    display: state.display,
-  };
-}
-
-export default connect(mapStateToProps)(MainPage);
+    </div>
+  );
+};

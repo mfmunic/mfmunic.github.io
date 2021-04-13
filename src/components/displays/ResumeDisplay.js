@@ -1,33 +1,24 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React, { useContext } from "react";
 
-import WorkExpDisplay from './resumeItems/WorkExpRI';
-import ResumePDF from './resumeItems/ResumePDF';
-import SkillsDisplay from './resumeItems/SkillsRI';
+import { AppContext } from "../../context";
 
-class ResumeDisplay extends Component {
-  decidedDisplay(chosen) {
+import ResumePDF from "./resumeItems/ResumePDF";
+import SkillsDisplay from "./resumeItems/SkillsRI";
+import WorkExpDisplay from "./resumeItems/WorkExpRI";
+
+export const ResumeDisplay = () => {
+  const { toolbar } = useContext(AppContext);
+
+  const decidedDisplay = (chosen) => {
     switch (chosen) {
-      case 'Skills':
+      case "Skills":
         return <SkillsDisplay />;
-      case 'Resume PDF':
+      case "Resume PDF":
         return <ResumePDF />;
       default:
         return <WorkExpDisplay />;
     }
-  }
-
-  render() {
-    const displayItem = this.decidedDisplay(this.props.display.toolbar);
-    return displayItem;
-  }
-}
-
-function mapStateToProps(state) {
-  return {
-    routing: state.routing,
-    display: state.display,
   };
-}
 
-export default connect(mapStateToProps)(ResumeDisplay);
+  return decidedDisplay(toolbar);
+};

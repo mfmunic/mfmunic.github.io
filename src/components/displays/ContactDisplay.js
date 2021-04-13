@@ -1,29 +1,19 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React, { useContext } from "react";
 
-import EmailCI from './contactItems/EmailCI';
-import LinksCI from './contactItems/LinksCI';
+import { AppContext } from "../../context";
 
-class ContactDisplay extends Component {
-  decidedDisplay(chosen) {
-    switch (chosen) {
-      case 'Links':
+import EmailCI from "./contactItems/EmailCI";
+import LinksCI from "./contactItems/LinksCI";
+
+export const ContactDisplay = () => {
+  const { toolbar } = useContext(AppContext);
+
+  return () => {
+    switch (toolbar) {
+      case "Links":
         return <LinksCI />;
       default:
         return <EmailCI />;
     }
-  }
-
-  render() {
-    return this.decidedDisplay(this.props.display.toolbar);
-  }
-}
-
-function mapStateToProps(state) {
-  return {
-    routing: state.routing,
-    display: state.display,
   };
-}
-
-export default connect(mapStateToProps)(ContactDisplay);
+};

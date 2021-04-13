@@ -1,15 +1,13 @@
-import React from 'react';
-import { render } from 'react-dom';
-import { Provider } from 'react-redux';
+import React from "react";
+import { render } from "react-dom";
 
-import './sass/endex.css';
-
-import MainPage from './components/MainPage';
-import store from './store';
+import "./sass/endex.css";
+import { AppProvider } from "./context";
+import { MainPage } from "./components/MainPage";
 
 render(
-  <Provider store={store}>
+  <AppProvider>
     <MainPage />
-  </Provider>,
-  document.getElementById('root'),
+  </AppProvider>,
+  document.getElementById("root")
 );
